@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  ffmpeg:
+    image: debian
+    build: .
+    container_name: ffmpeg
+    volumes:
+      - "./data:/data"
